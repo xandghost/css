@@ -1,27 +1,21 @@
-
-#testee{
+.testee{
 	position:fixed;
-
 	top:20px;
 	right:20px;
-
 	width:300px;
 	padding:20px;
-
 	background:#1f232d;
-
 	border:1px solid #49625D;
 	border-radius:12px;
-
 	color:#fff;
-
-	box-shadow:0 8px 20px rgba(0,0,0,.35);
-
-	z-index:9999;
+	z-index:99999;
 }
 
-
-
+div[class="testee"]{
+	background:red!important;
+	color:white!important;
+	padding:20px!important;
+}
 
 @media(max-width:900px){
 .game_cell{flex-direction:column!important;align-items:stretch!important}
