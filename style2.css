@@ -1,0 +1,91 @@
+.user_profile.formatted > div:last-child{
+	position:fixed;
+	top:20px;
+	right:20px;
+ 
+	width:300px;
+	padding:20px;
+
+	background:#1f232d;
+	border:1px solid #49625D;
+	border-radius:12px;
+
+	color:white;
+
+	z-index:99999;
+}
+
+:root{--itchio_ui_bg:#2c2d2f}
+body{background:#141822;background:linear-gradient(170deg,#141522 0%,#142221 75%,#142221 100%)}
+.user_page{--itchio_font_family:Abel;--itchio_link_color:#49625D;--itchio_gray_back:#1f232d;--itchio_border_radius:7px;color:#5b777d;font-size:106%;font-family:Abel,Lato,LatoExtended,sans-serif}
+.user_page hr,.game_column,.purchased_games,.collection_row,.footer{border-color:#333b4e}
+.user_page .user_links .svgicon{fill:#5b777d}
+.user_page a,.footer a{color:#49625D}
+
+.user_links,.link_group,.header,.game_genre{display:none!important}
+
+h2{text-align:center;text-transform:uppercase;pointer-events:none;background:rgba(118,160,170,.1);padding:10px;border-radius:5px;width:75%;margin:auto;transform:skew(-25deg);box-shadow:0 2px 4px rgba(0,0,0,.25)}
+h2 a,h2 a:hover,h2 a:visited,h2 a:active{text-decoration:none!important}
+
+.image_header{overflow:hidden;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);position:fixed;top:0;width:100%;height:50px;z-index:1;background:rgba(0,0,0,.5);box-shadow:0 2px 4px rgba(0,0,0,.5)}
+.image_header img{pointer-events:none}
+.profile_content{margin-top:50px!important}
+
+.user_game_grid{display:flex!important;flex-direction:column!important;gap:20px;--itchio_grid_gap:0!important;--itchio_grid_cell_width:100%!important;--itchio_grid_cell_columns:1!important}
+
+.game_cell{display:flex!important;align-items:center!important;width:100%!important;padding:12px!important;margin:0!important;box-sizing:border-box;border:1px solid #333b4e;border-radius:8px;background:rgba(31,35,45,.25);backdrop-filter:blur(4px)}
+
+.game_thumb{width:260px!important;min-width:260px!important;height:150px!important;border:2px solid rgba(118,160,170,.1);overflow:hidden;background:rgba(118,160,170,.1)!important;transition:border .5s ease-out,background-color .3s ease-out;display:flex!important;align-items:center!important;justify-content:center!important;margin:0!important;padding:0!important}
+.game_thumb:hover{border-color:rgba(118,160,170,.5);background:rgba(118,160,170,1)!important;box-shadow:0 2px 4px rgba(0,0,0,.5)!important}
+
+.thumb_link{width:100%!important;height:100%!important;margin:0!important;padding:0!important;display:block!important}
+
+.game_thumb,.game_thumb a,.thumb_link,.game_thumb img,.lazy_loaded{background:transparent!important;box-shadow:none!important}
+
+.game_thumb img,.lazy_loaded{width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;border-radius:3px}
+.game_thumb img{transition:transform .35s ease-out,filter .15s ease-out}
+.game_thumb:hover img{transform:scale(1.13) rotate(1deg);filter:brightness(150%)}
+.game_thumb:active img{transform:scale(.85);filter:brightness(200%)}
+
+.game_cell_data{flex:1;height:150px!important;padding:0 22px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;text-align:left!important}
+
+.game_title{visibility:visible!important;height:auto!important;margin:0 0 2px!important}
+.game_title,.game_title a,.game_title a.title{background:none!important;border:none!important;box-shadow:none!important;padding:0!important}
+.game_title a{font-size:18px!important;font-weight:700!important;color:#fff!important}
+
+.game_text{margin:0!important;font-size:13px!important;color:rgba(171,223,237,.8)!important;overflow:visible!important;white-space:normal!important}
+
+.game_platform{display:flex!important;flex-wrap:wrap;gap:8px;margin-top:auto!important;margin-bottom:8px!important;opacity:.65}
+.web_flag{margin:0!important;padding:5px 10px!important;border-radius:4px;background:rgba(118,160,170,.12)!important;color:rgba(171,223,237,1)!important}
+
+.button,.action_btn,.buy_btn,.game_link{border:1px solid rgba(118,160,170,.18)!important;background:rgba(118,160,170,.08)!important;border-radius:4px!important;padding:0px 0px!important;box-shadow:none!important}
+
+.game_cell::after{
+	content:"";
+	width:320px;
+	min-width:320px;
+	height:150px;
+	margin-left:15px;
+	border-radius:3px;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	transition:.25s;
+	cursor:pointer;
+}
+
+.game_cell:hover::after{
+	transform:scale(1.05);
+}
+
+.game_cell:active::after{
+	transform:scale(1.5);
+	z-index:999;
+}
+.game_cell[data-game_id="3502685"]::after{background-image:url("https://i.imgur.com/jXOM9Gq.gif")}
+.game_cell[data-game_id="2582165"]::after{background-image:url("https://img.itch.zone/aW1nLzE1Mzc3NDU4LmdpZg==/original/x%2F7rrn.gif")}
+.game_cell[data-game_id="2249444"]::after{background-image:url("https://img.itch.zone/aW1hZ2UvMjI0OTQ0NC8xMzMzMjM4Ny5wbmc=/original/q17VIL.png")}
+.game_cell[data-game_id="909801"]::after{background-image:url("https://img.itch.zone/aW1hZ2UvOTA5ODAxLzUxNTk5MTUuZ2lm/original/1nMZDG.gif")}
+.game_cell[data-game_id="89072"]::after{background-image:url("https://i.imgur.com/9l6XXOX.png")}
+
+@import url("https://cdn.jsdelivr.net/gh/xandghost/css@main/style.css");
