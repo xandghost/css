@@ -5,6 +5,21 @@ body{background:#141822;background:linear-gradient(170deg,#141522 0%,#142221 75%
 .user_page .user_links .svgicon{fill:#5b777d}
 .user_page a,.footer a{color:#49625D}
 
+/* Cursor padrão */
+body {
+    cursor: url(https://i.imgur.com/zimXM1L.png), auto;
+}
+
+/* Cursor ao passar sobre links */
+a {
+    cursor: url(https://i.imgur.com/frGwAyJ.png), pointer;
+}
+
+/* Cursor ao passar sobre botões */
+button {
+    cursor: url(https://i.imgur.com/frGwAyJ.png), pointer;
+}
+
 .user_links,.link_group,.header,.game_genre{display:none!important}
 
 h2{text-align:center;text-transform:uppercase;pointer-events:none;background:rgba(118,160,170,.1);padding:10px;border-radius:5px;width:75%;margin:auto;transform:skew(-25deg);box-shadow:0 2px 4px rgba(0,0,0,.25)}
