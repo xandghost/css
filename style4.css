@@ -10,14 +10,19 @@ body {
     cursor: url(https://i.imgur.com/zimXM1L.png), auto;
 }
 
-/* Cursor ao passar sobre links */
-a {
-    cursor: url(https://i.imgur.com/frGwAyJ.png), pointer;
+* {
+    cursor: url(https://i.imgur.com/zimXM1L.png), auto !important;
 }
 
-/* Cursor ao passar sobre botões */
-button {
-    cursor: url(https://i.imgur.com/frGwAyJ.png), pointer;
+/* Cursor de clique */
+a,
+button,
+img,
+.game_thumb,
+.game_cell,
+input,
+label {
+    cursor: url(https://i.imgur.com/frGwAyJ.png), pointer !important;
 }
 
 .user_links,.link_group,.header,.game_genre{display:none!important}
